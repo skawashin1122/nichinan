@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NICHINAN株式会社 | 企業サイト</title>
+  <meta name="description" content="NICHINAN株式会社の企業情報、サービス、採用情報をご紹介します。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="logo" aria-label="NICHINAN株式会社 トップへ">NICHINAN</a>
+      <button class="menu-button" id="menuButton" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="globalNav">
+        <a href="#about">会社情報</a>
+        <a href="#services">サービス</a>
+        <a href="#news">お知らせ</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">未来をつくる、地域とともに</p>
+        <h1>信頼を土台に、
+          ビジネスの成長を支える。</h1>
+        <p class="hero-text">NICHINAN株式会社は、IT支援と業務改善サービスを通じて、
+          企業の課題解決と新たな価値創出に取り組んでいます。</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn primary">サービスを見る</a>
+          <a href="#contact" class="btn ghost">相談する</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2>会社情報</h2>
+        <p class="section-lead">私たちは「誠実」「挑戦」「共創」を大切に、
+          お客様と長期的なパートナーシップを築きます。</p>
+        <div class="about-grid">
+          <article class="card">
+            <h3>ミッション</h3>
+            <p>地域企業のデジタル変革を支援し、持続可能な事業成長を実現します。</p>
+          </article>
+          <article class="card">
+            <h3>ビジョン</h3>
+            <p>変化の時代に、最も信頼される課題解決パートナーを目指します。</p>
+          </article>
+          <article class="card">
+            <h3>バリュー</h3>
+            <p>現場理解を起点に、迅速で実効性の高い改善策を提案します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="services">
+      <div class="container">
+        <h2>サービス</h2>
+        <div class="service-grid">
+          <article class="card">
+            <h3>業務改善コンサルティング</h3>
+            <p>業務フローを可視化し、無駄を省いた運用設計を支援します。</p>
+          </article>
+          <article class="card">
+            <h3>システム導入支援</h3>
+            <p>要件整理から導入、定着まで一貫して伴走します。</p>
+          </article>
+          <article class="card">
+            <h3>運用サポート</h3>
+            <p>導入後の課題にも継続対応し、成果最大化を後押しします。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="container">
+        <h2>お知らせ</h2>
+        <ul class="news-list">
+          <li><time datetime="2026-06-01">2026.06.01</time> コーポレートサイトを公開しました。</li>
+          <li><time datetime="2026-05-10">2026.05.10</time> 業務改善セミナーを開催しました。</li>
+          <li><time datetime="2026-04-18">2026.04.18</time> 採用情報ページを更新しました。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2>お問い合わせ</h2>
+        <p class="section-lead">ご相談・お見積りはお気軽にご連絡ください。</p>
+        <form class="contact-form" id="contactForm">
+          <label>
+            お名前
+            <input type="text" name="name" placeholder="例: 山田 太郎" required />
+          </label>
+          <label>
+            メールアドレス
+            <input type="email" name="email" placeholder="example@nichinan.co.jp" required />
+          </label>
+          <label>
+            お問い合わせ内容
+            <textarea name="message" rows="5" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+          </label>
+          <button type="submit" class="btn primary">送信する</button>
+          <p class="form-message" id="formMessage" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="currentYear"></span> NICHINAN Co., Ltd. All Rights Reserved.</p>
+      <a href="#top" class="to-top">トップへ戻る</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
